@@ -1,0 +1,75 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+.video-player {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #2196f3;
+  position: absolute;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+.time-display {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
